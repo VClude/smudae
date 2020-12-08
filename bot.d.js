@@ -16,12 +16,12 @@ const token = process.env.TOKEN || conf_token;
 
 const AntiSpam = require('discord-anti-spam');
 const antiSpam = new AntiSpam({
-	warnThreshold: 4, // Amount of messages sent in a row that will cause a warning.
-	kickThreshold: 6, // Amount of messages sent in a row that will cause a kick.
+	warnThreshold: 5, // Amount of messages sent in a row that will cause a warning.
+	kickThreshold: 0, // Amount of messages sent in a row that will cause a kick.
 	banThreshold: 0, // Amount of messages sent in a row that will cause a ban.
 	muteThreshold: 0, // Amount of messages sent in a row that will cause a mute.
 	maxInterval: 2000, // Amount of time (in milliseconds) in which messages are considered spam.
-	warnMessage: 'Kalem Bos, sekali lagi ngespam lo w tendang dari pasar {@user}', // Message that will be sent in chat upon warning a user.
+	warnMessage: 'wah kalem dong cuy {@user}', // Message that will be sent in chat upon warning a user.
 	kickMessage: '**{user_tag}** diusir paksa dari lelang waifu', // Message that will be sent in chat upon kicking a user.
 	banMessage: '**{user_tag}** has been banned for spamming.', // Message that will be sent in chat upon banning a user.
 	muteMessage: '**{user_tag}** has been muted for spamming.', // Message that will be sent in chat upon muting a user.
@@ -44,14 +44,25 @@ client.on("ready", () => {
 
 
 client.on('message', (message) =>{
-  
+   
     
-    if(message.channel.id == '782917925257871370'){
-        let a = antiSpam.message(message);
-
-        if(a === true){
-            antiSpam.resetData();
-        }
+    if(message.channel.id == '778265794052096003'){
+        antiSpam.message(message).then((results) => {
+     
+            if(results === true){
+                let channel = client.channels.cache.get('778265794052096003');
+                const emsg = new Discord.MessageEmbed()
+                .setColor('#0099ff')
+                .setTitle('Perdagangan Waifu DIBATASI')
+                .setImage('https://i.imgur.com/DiDNF8n.jpeg')
+                .addField('PEMBERITAHUAN', 'Karena oknum nakal spam, laju pasar akan diperlambat selama 5 detik sekali, HINGGA PELELANGAN KEDEPAN');
+                channel.send(emsg);
+                message.channel.setRateLimitPerUser(5,'haha');
+            }
+      
+        });
+  
+      
     
     }
 

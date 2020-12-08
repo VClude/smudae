@@ -1,7 +1,7 @@
 {
   "bot_config": {
     "prefix": "!d",
-    "conf_token": "Nzg1ODc4MzY1Mjg1NjQ2MzQ2.X8-QQw.wtJmVS10F7XN_37KAaAFRVm9MAE",
+    "conf_token": "Nzg1ODc4MzY1Mjg1NjQ2MzQ2.X8-QQw.lSE9Zuz-ZU2NjKyI88kaYOWxgyo",
     "api_endpoint": "",
     "db_url": "ttps://kurebot-2f752.firebaseio.com",
     "guildmates_role":  "ASTELLIA",
