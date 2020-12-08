@@ -46,11 +46,11 @@ client.on("ready", () => {
 client.on('message', (message) =>{
    
     
-    if(message.channel.id == '778265794052096003'){
+    if(message.channel.id == '782917925257871370'){
         antiSpam.message(message).then((results) => {
      
             if(results === true){
-                let channel = client.channels.cache.get('778265794052096003');
+                let channel = client.channels.cache.get('782917925257871370');
                 const emsg = new Discord.MessageEmbed()
                 .setColor('#0099ff')
                 .setTitle('Perdagangan Waifu DIBATASI')
@@ -58,6 +58,7 @@ client.on('message', (message) =>{
                 .addField('PEMBERITAHUAN', 'Karena oknum nakal spam, laju pasar akan diperlambat selama 5 detik sekali, HINGGA PELELANGAN KEDEPAN');
                 channel.send(emsg);
                 message.channel.setRateLimitPerUser(5,'haha');
+                
             }
       
         });
