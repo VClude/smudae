@@ -1,0 +1,133 @@
+{
+  "bot_config": {
+    "prefix": "!d",
+    "conf_token": "Nzg1ODc4MzY1Mjg1NjQ2MzQ2.X8-QQw.wtJmVS10F7XN_37KAaAFRVm9MAE",
+    "api_endpoint": "",
+    "db_url": "ttps://kurebot-2f752.firebaseio.com",
+    "guildmates_role":  "ASTELLIA",
+    "guildmates_id": 241952916053688321,
+    "guildmates_role_2":  "ASTESSIA"
+  },
+  "sql_config":{
+    
+      "host"     : "localhost",
+      "user"     : "root",
+      "password" : "",
+      "database" : "kurebot"
+    
+  },
+  "event":[
+    {
+      "args": 0,
+      "name": "Whale Banner",
+      "url": "https://i.imgur.com/lBeDQdQ.png",
+      "enabled":false,
+      "stepup": false,
+      "cost":true,
+      "tccost":[100000],
+      "isguaranteed":true,
+      "quantity":11,
+      "info": "GUARANTEED 11SR, 100,000 TC / multipull",
+      "rateup":"../assets/json/Pool_Gacha/Whale Banner/pool.json",
+      "rateupA":"../assets/json/master/weaponA.json",
+      "rateupS":"../assets/json/master/weaponS.json"
+  },
+  {
+    "args": 1,
+    "name": "Grimoire: Damsel Duo",
+    "enabled":true,
+    "stepup": false,
+    "cost":true,
+    "tccost":[300],
+    "isguaranteed":true,
+    "quantity":11,
+    "info": "Rate-Up Specific Weapon \n- Guaranteed 1 S or Higher",
+"url":"https://webcontents-sinoalice-g.pokelabo.jp//web/img/alice/announce/67d1d3868fe693d7724c4cfa44796a98.png",
+    "rateup":"../assets/json/Pool_Gacha/Damsel Duo/pool.json",
+    "rateupA":"../assets/json/master/weaponA.json",
+    "rateupS":"../assets/json/master/weaponS.json"
+  },
+  {
+    "args": 2,
+    "name": "STEP Grimoire: Gran Election #1 Winner's Grimoire",
+    "enabled":true,
+    "stepup": true,
+    "cost":true,
+    "stepmax":3,
+    "stepqty":[5,11,11],
+    "tccost":[150,300,300],
+    "isguaranteed":true,
+    "guaranteed": [2500],
+    "quantity":5,
+    "info": "Rate-Up Specific Weapon \n- Guaranteed 1 Featured SR at STEP 3 \n-Flag Spear of Justice (0.666 %)",
+    "url": "https://webcontents-sinoalice-g.pokelabo.jp//web/img/alice/announce/0da7b02700f8ecc6cefb971568ed9478.png",
+    "rateup":"../assets/json/Pool_Gacha/Gran Election/pool.json",
+    "rateupA":"../assets/json/master/weaponA.json",
+    "rateupS":"../assets/json/master/weaponS.json"
+  },
+  {
+    "args": 3,
+    "name": "STEP Grimoire: Purple Smoke Jester",
+    "enabled":true,
+    "stepup": true,
+    "cost":true,
+    "isguaranteed":true,
+    "tccost":[150,150,300,300,300],
+    "guaranteed": [2500,2502,2504],
+    "stepmax":5,
+    "stepqty":[5,5,11,11,11],
+    "quantity":5,
+    "info": "Rate-Up Specific Weapon \n- Guaranteed 1SR at STEP 5 \n-Intent of Delusion (0.666 %)\n-Armor Giant (0.666 %)\n-Voltage Dictionary (0.666 %)\n-Steel Flute (0.444 %)\n-Gun of Obsession (0.444 %)",
+    "url": "https://webcontents-sinoalice-g.pokelabo.jp//web/img/alice/announce/407b357baff103375ea36484ac9b4d0f.png",
+    "rateup":"../assets/json/Pool_Gacha/Purple Smoke Jester/pool.json",
+    "rateupA":"../assets/json/master/weaponA.json",
+    "rateupS":"../assets/json/master/weaponS.json"
+  },
+
+  {
+  "args": 4,
+  "name": "Grimoire: Colosseum Ticket",
+  "enabled":true,
+  "stepup": false,
+  "isguaranteed":false,
+  "tccost":[150],
+  "cost":false,
+  "quantity":5,
+  "info": "Free Gacha no rate up",
+  "url": "https://image.prntscr.com/image/i0_UZ-hFQQS00MUM2kbfNg.png",
+  "rateup":"../assets/json/Pool_Gacha/Colosseum Ticket/pool.json",
+  "rateupA":"../assets/json/master/weaponA.json",
+  "rateupS":"../assets/json/master/weaponS.json"
+  },
+
+  {
+    "args": 1,
+    "name": "Rearguard Grimoire : Tomes",
+    "enabled":true,
+    "stepup": false,
+    "cost":true,
+    "tccost":[300],
+    "isguaranteed":true,
+    "quantity":11,
+    "info": "Rate-Up Specific Weapon \n- Guaranteed 1 S or Higher",
+"url":"https://webcontents-sinoalice-g.pokelabo.jp//web/img/alice/announce/67d1d3868fe693d7724c4cfa44796a98.png",
+    "rateup":"../assets/json/Pool_Gacha/Damsel Duo/pool.json",
+    "rateupA":"../assets/json/master/weaponA.json",
+    "rateupS":"../assets/json/master/weaponS.json"
+  }
+
+],
+  "firebase": {
+    "type": "service_account",
+    "project_id": "kurebot-2f752",
+    "private_key_id": "a47bc4dc5421b537d6c1efe455d88ea4641e1e83",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQD2kMr9eG6r6/a5\noCXO6djjBEgd91xLH46lpwa3mW+WAoPfjEL480Rsdwh+hagelCDBFVJ+02CAJDPA\n0XuhORukiP56ciqsmt1UlMqeWFtNrdZmWSj+nzwv+YwufYkVCckv68ww9KgtQczp\n5m3WtJS5JW1lOMWDdqgOrF0GkRmxzdXk3KNHUX3OVWi5b0GkPpMJJlz3mrmuXe4v\nXA2Ey/AJsxRwcvKBvG3jxjkeMcyoxX3Kpj6Y0a8a7DT4xcDui+CLMo6k7XOTgMt7\nt7TEYNzUmgNOTTrUg8lCBh0Kq76vbVhH2+8myDUhASO/mrsI9qun8tZ0XUzObHFb\n83UkK9b9AgMBAAECggEAVe5rmIA3DfrsX5BFbQIKAUCWQ79YbqQeanQ2Ppmejqjs\nveXb13itAaJQlwvM5m9YpQJh4GqZyL8VPF+l1zAYhrTp/9G3NrW4aoh6v0nq9D0g\nKkZrp6Xma4/sv60nr+nbsLRc0zkJPdCfcmtJH5mK9aXqJOtuxtz9QDPpLec3DcSQ\nYsoxlYQ8mLFja8urtL9DMFiLE65CiRLHLXQZ+vvMwRfgkf9AWLqjcscwmklvuoS9\nWbigU8PTIezMunwIhBX2CI/stpPR1dLKb6VgdJJ/OA1FmD3FQCXU+KoSUPvRnEI+\nyivELq+HWaZH4vSdtG9OJ54G/EcFd1M0qu3sRAFfzwKBgQD+bTEibXeVpf1Rj5Nx\nKZA1N7O+SRyqGWnM9WkHO13+ioPrjRQe4QBieXnEuzZTMtFQQzOKJlEcd93R9Dxq\nsPFeSCvh7fqcI/hxWOmmIcwA8pM1NBzvH+08cgj2OHwTD7yijjB2WAZz4kzz5CTd\noC4XAjQux1MaQAsjKY11hXyy9wKBgQD4FyfTXmPEFyxiCw1PQXJuelXWkY91iHyU\nqvazmnBclK4UP+9c/syY2Kny55XsOLw2HABUpZCeUZLZRZdgBibENGwcbSXpmj1q\nwiRoyGu3UkPkvh14we4zvzFmEW0/OpJll+1Q3i65zmtFl8TJDJLozJcWykx1GFsy\ndIUcNQMUqwKBgHaG4eP7AUHbEVckvvhx93eDWp4kK1FnA23zShmPY6uIVgqvL5dv\nFKHLm5m16Yn62547oFAUp6bOhK0hzd+aTOeyUZcwKZcB/uS3GipGBmbOmxunCm+v\n/PIy4c/q4opyw1srSJJpUaA85cKdHzuMOsyHP04nl6Rb/5RC8F62cDBjAoGAd+Xw\n+GUgwC8W4xdGSmxt2ljDTVyxwXLCCrOJYQmdjhDJBL5Vd1MpHCFyGRO1UCGnTFtC\nCaaueuUfnGPWobC3YZGYQjC55ukFD6heIkniTQm0CEOdSLQo49deD18StkEfaXwA\nVFncqS3KiCquDyBFi778siX4x4qK4JqRji1MnNsCgYAkbas3DO60T1/W9MBU/cKj\nY04z//jY8uYkdJ8gGI5N9vL5e2+I60G96kWp1Sy+gxDR6zfEgR3OK0PoF7QJRdtZ\nen/5aATqQEbqYvKNrPhF+pdzSyxvDi7QeDxmEH/Bgsa3nj4wACD+njAzucUph8kS\nTcgsUB9cqaD84nOiCJWigg==\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-rd9wr@kurebot-2f752.iam.gserviceaccount.com",
+    "client_id": "104954707830310593464",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-rd9wr%40kurebot-2f752.iam.gserviceaccount.com"
+  }
+  
+}
